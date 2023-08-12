@@ -28,7 +28,11 @@ M&C is a Redmine Plugin used as a chart tool to monitoring issues' project
 
 === Requirements
 
-* Redmine trunk version;
+* Redmine trunk version; 
+
+=== Compatibility
+
+The plugins supports the following Redmine versions: 5.0.x, 4.0.x.
 
 === Step-by-step
 
