@@ -23,3 +23,7 @@ Redmine::Plugin.register :redmine_monitoring_controlling do
 
 end
 
+if Rails.configuration.respond_to?(:autoloader) && Rails.configuration.autoloader == :zeitwerk
+  Rails.autoloaders.each { |loader| loader.ignore(File.dirname(__FILE__) + '/lib') }
+end
+require File.dirname(__FILE__) + '/lib/mc_tools'
